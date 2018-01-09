@@ -1,0 +1,17 @@
+<h1>Listing post</h1>
+<%= link_to "New post", :action => :new %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th>Detalle</th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.text %></td>
+      <td><%= link_to "see detail", post_path(post) %></td>
+    </tr>
+  <% end %>
+</table>
