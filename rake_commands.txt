@@ -1,0 +1,13 @@
+rake --version
+rake about
+rake db:version
+rake middleware
+rake notes
+rake stats
+rake test
+rake test:controller
+rake test:controllers
+rake test:controllers TEST_OPTS="--verbose"
+rake test:models
+rake version
+which rake
